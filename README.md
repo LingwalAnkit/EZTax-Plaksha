@@ -1,5 +1,5 @@
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write("""# 📌 ITR Filing & Financial Advisory WebApp  
+
+ ITR Filing & Financial Advisory WebApp  
 
 🚀 **Smart Tax Filing & Financial Planning Made Easy**  
 
