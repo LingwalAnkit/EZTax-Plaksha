@@ -1,6 +1,4 @@
-Here's a robust, professional, and comprehensive GitHub README for your Tax Chatbot and Recommendation System project, tailored precisely to your provided codebase and functionalities:
 
----
 
 # 📚 EZTax: AI-Powered Tax Assistant & Recommendation Engine
 
