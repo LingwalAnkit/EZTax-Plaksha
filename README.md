@@ -2,53 +2,6 @@
 
 # 📚 EZTax: AI-Powered Tax Assistant & Recommendation Engine
 
-**EZTax** is an intelligent, AI-powered chatbot and recommendation system designed specifically to simplify tax planning, compliance, and financial decision-making. Built with advanced AI models like Google's Gemini, HuggingFace embeddings, LangChain, FAISS, and integrated APIs from Function.Network, EZTax delivers precise tax information and personalized financial insights tailored to Indian tax laws.
-
----
-
-## 🚀 Project Overview
-
-EZTax consists of two main components:
-
-1. **🤖 AI Tax Chatbot**  
-   - Instantly answers tax-related queries using context-aware document retrieval.
-   - Uses LangChain, HuggingFace embeddings, FAISS Vectorstore, and Google's Gemini API for precise answers.
-
-2. **📈 Tax Recommendation Engine**  
-   - Generates detailed, personalized tax-saving and investment insights based on user financial data.
-   - Employs Google Gemini API for generating insightful, actionable reports compliant with Indian tax regulations.
-
----
-
-## 🌟 Key Features
-
-### Tax Chatbot:
-- 📁 **PDF Knowledge Base**: Automatically processes and indexes PDFs to answer tax-related questions.
-- 🔍 **Semantic Search**: Uses FAISS for quick, accurate document retrieval.
-- 🔄 **Hybrid Answer Generation**: Seamlessly combines FAISS retrieval with Gemini API for comprehensive answers.
-- 🧠 **Conversation Memory**: Maintains context throughout user interactions.
-- 📈 **Rate-limit Handling**: Robust error handling and retries for seamless user experience.
-
-### Recommendation Engine:
-- 💡 **Personalized Financial Insights**: Generates tax-saving and investment recommendations tailored to user data.
-- 📊 **Comprehensive Tax Reports**: Compares old vs. new tax regimes, clearly outlining savings.
-- 🇮🇳 **India-Specific Advice**: Fully compliant insights adhering strictly to Indian tax law.
-
----
-
-## 🛠 Tech Stack & Integrations
-
-- **AI Models**:
-  - Google Gemini (`gemini-1.5-pro-latest`, `gemini-1.5-flash`)
-  - HuggingFace Embeddings (`sentence-transformers/all-MiniLM-L6-v2`)
-  - Function.Network API (`google/gemma-7b-it`)
-
-- **Frameworks & Libraries**:
-  - Python (Flask, Requests, LangChain, FAISS, PyPDFLoader, dotenv)
-  - Vector databases (FAISS)
-  - Deployment (Ngrok for public API exposure)
-
----
 
 # EZTax
 
