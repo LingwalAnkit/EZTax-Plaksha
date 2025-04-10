@@ -136,13 +136,5 @@ We welcome contributions! Please follow these steps:
 
 ---
 
-## 📩 Contact
-
-For any queries or suggestions, reach out to:  
-- **Email:** yourname@example.com  
-- **GitHub:** [YourGitHubUsername](https://github.com/yourusername)
-
----
-
 **Star this project if you find it useful! ⭐️**
 ```
