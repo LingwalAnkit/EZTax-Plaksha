@@ -117,4 +117,8 @@ def master_function():
         return json.dumps({"error": str(e)})
 
 if __name__ == "__main__":
-    print(master_function())
+    try:
+        print(master_function())
+    except Exception as e:
+        print(json.dumps({"error": str(e)}))
+

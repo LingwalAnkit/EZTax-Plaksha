@@ -4,9 +4,9 @@ import { useState, useEffect, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import LoginForm from "../../components/Authform/loginForm";
-import RegisterForm from "../../components/Authform/registerForm";
-import Login from "../../../public/auth/Login.svg";
+import LoginForm from "./Authform/loginForm";
+import RegisterForm from "./Authform/registerForm";
+import Login from "../../../public/images/Login.svg";
 import { useRouter } from "next/navigation";
 import { IconArrowLeft } from "@tabler/icons-react";
 

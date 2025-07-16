@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import axios from "axios";
+import Image from "next/image";
+import logo from "../../../public/images/logo.png";
 
 const navItems = [
   { name: "Features", href: "#features", isSection: true },
@@ -70,11 +72,14 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto ml-4">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
-            <Link
-              href="/"
-              className="montserrat-font-medium text-3xl text-white"
-            >
-              Logo
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="Authentication Illustration"
+                width={250}
+                height={250}
+                className="-ml-12 mr-auto"
+              />
             </Link>
 
             {/* Nav Items */}
@@ -84,7 +89,7 @@ const Navbar = () => {
                   <Link
                     href={item.href}
                     onClick={(e) => handleNavigation(e, item)}
-                    className="text-white hover:text-blue-200 transition duration-150 ease-in-out flex items-center"
+                    className="text-neutral-800 hover:text-blue-500 transition duration-150 ease-in-out flex items-center"
                   >
                     {item.name}
                   </Link>
@@ -129,7 +134,7 @@ const Navbar = () => {
               ) : (
                 <button
                   onClick={() => navigateToAuth(false)}
-                  className="px-4 py-2 text-md text-white bg-blue-600 border border-blue-600 rounded-xl hover:bg-blue-700 cursor-pointer montserrat-font-medium"
+                  className="px-4 py-2 text-md text-white bg-blue-600 border border-blue-600 rounded-3xl hover:bg-blue-700 cursor-pointer montserrat-font-medium"
                 >
                   Sign Up
                 </button>

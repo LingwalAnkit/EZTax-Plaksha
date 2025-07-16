@@ -1,11 +1,20 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "../ui/sideBarComponent";
-import { CircleUser, LogOut , UploadCloud , Calculator , ClipboardMinus   } from "lucide-react";
+import {
+  CircleUser,
+  LogOut,
+  UploadCloud,
+  Calculator,
+  ClipboardMinus,
+  Info,
+  Home,
+  PiggyBank,
+  LayoutDashboard,
+} from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import axios from "axios";
-import Image from "next/image";
-import LG from "../../../public/auth/Login.svg";
+import { useSidebar } from "../../hooks/useSidebar";
 
 const SidebarComponent = () => {
   const pathname = usePathname();
@@ -33,22 +42,72 @@ const SidebarComponent = () => {
     }
   };
 
-  const Logo = () => (
-    <Image
-      alt="Logo"
-      src={LG}
-      width={70}
-      height={70}
-      className="px-1 mt-4 mb-10"
-    />
-  );
+  const Logo = () => {
+    const { open } = useSidebar();
+
+    return (
+      <div className="text-blue-500 font-extrabold text-2xl px-1 mt-6 mb-4 transition-all duration-300">
+        {open ? "EZ-Tax" : "EZ"}
+      </div>
+    );
+  };
 
   const links = [
-    { label: "AI Tax-Calculator", href: "/dashboard", icon: <Calculator  className="h-6 w-6 flex-shrink-0" />, isBottom: false },
-    { label: "Upload", href: "/upload", icon: <UploadCloud className="h-6 w-6 flex-shrink-0" />, isBottom: false },
-    { label: "Generate-Report", href: "/generateReport", icon: <ClipboardMinus  className="h-6 w-6 flex-shrink-0" />, isBottom: false },
-    { label: user?.firstName || "Profile", href: "/profile", icon: <CircleUser className="h-6 w-6 flex-shrink-0" />, isBottom: true },
-    { label: "Logout", href: "", icon: <LogOut className="h-6 w-6 flex-shrink-0" />, isBottom: true, onClick: handleLogout },
+    {
+      label: "Dashboard",
+      href: "/dashboard",
+      icon: <LayoutDashboard className="h-6 w-6 flex-shrink-0" />,
+      isBottom: false,
+    },
+    {
+      label: "AI Tax-Calculator",
+      href: "/taxCalculator",
+      icon: <Calculator className="h-6 w-6 flex-shrink-0" />,
+      isBottom: false,
+    },
+    {
+      label: "Upload",
+      href: "/upload",
+      icon: <UploadCloud className="h-6 w-6 flex-shrink-0" />,
+      isBottom: false,
+    },
+    {
+      label: "Reports",
+      href: "/generateReport",
+      icon: <ClipboardMinus className="h-6 w-6 flex-shrink-0" />,
+      isBottom: false,
+    },
+    {
+      label: "AI Insurance",
+      href: "localhost:8000",
+      icon: <PiggyBank className="h-6 w-6 flex-shrink-0" />,
+      isBottom: false,
+    },
+    {
+      label: "FAQs",
+      href: "/faqs",
+      icon: <Info className="h-6 w-6 flex-shrink-0" />,
+      isBottom: false,
+    },
+    {
+      label: user?.firstName || "Profile",
+      href: "/profile",
+      icon: <CircleUser className="h-6 w-6 flex-shrink-0" />,
+      isBottom: true,
+    },
+    {
+      label: "Home",
+      href: "/",
+      icon: <Home className="h-6 w-6 flex-shrink-0" />,
+      isBottom: true,
+    },
+    {
+      label: "Logout",
+      href: "",
+      icon: <LogOut className="h-6 w-6 flex-shrink-0" />,
+      isBottom: true,
+      onClick: handleLogout,
+    },
   ];
 
   const isLinkActive = (href) => pathname === href;

@@ -3,9 +3,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Sidebar from "../../components/layout/Sidebar";
 import Image from "next/image";
-import bulkVerify from "../../../public/auth/Signup.svg";
-import { AccountingFileUpload } from "../../components/ui/fileUpload/accountingUpload";
-import { AccountingFormInput } from "../../components/ui/textUpload"
+import bulkVerify from "../../../public/images/Signup.svg";
+import { AccountingFileUpload } from "./components/fileUpload/accountingUpload";
+import { AccountingFormInput } from "./components/textUpload/textUpload";
 import { IconArrowLeft } from "@tabler/icons-react";
 
 export default function Bulk() {
@@ -36,9 +36,13 @@ export default function Bulk() {
                     className="max-w-full max-h-full object-contain"
                   />
                   <div>
-                    <h2 className="text-blue-600 text-5xl font-semibold mb-6 montserrat-font-medium">Upload Docs</h2>
+                    <h2 className="text-blue-600 text-5xl font-semibold mb-6 montserrat-font-medium">
+                      Upload Docs
+                    </h2>
                     <p className="text-gray-600 text-lg mb-8 montserrat-font-medium">
-                      Quickly verify large volumes of emails to ensure accuracy and boost deliverability. Improve your campaigns with fast, reliable verification.
+                      Quickly verify large volumes of emails to ensure accuracy
+                      and boost deliverability. Improve your campaigns with
+                      fast, reliable verification.
                     </p>
                     <div className="mt-4 flex gap-4 justify-center">
                       <button

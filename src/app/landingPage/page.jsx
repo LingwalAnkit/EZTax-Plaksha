@@ -1,8 +1,8 @@
 import React from "react";
-import { HeroSection } from "../../components/home/heroSection";
-import Steps  from "../../components/home/steps"
-import {FeatureSection} from "../../components/home/feature"
-import Footer from "../../components/layout/footer"
+import { HeroSection } from "./components/heroSection";
+import Steps from "./components/steps";
+import { FeatureSection } from "./components/feature";
+import Footer from "../../components/layout/footer";
 
 export default function LandingPage() {
   return (

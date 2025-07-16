@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 # ✅ Load environment variables from .env file
-env_path = r"C:\Users\AkshatSaraswat\Desktop\Plaksha\.env"  # Ensure correct path
+env_path = r"D:\EZTax-Plaksha\PlakshaChatbot\.env"  # Ensure correct path
 load_dotenv(env_path)
 
 # ✅ Get API key from environment (no hardcoding)

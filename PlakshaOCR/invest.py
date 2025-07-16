@@ -176,7 +176,7 @@ def process_document(file_path, document_type):
         
         # Configure Gemini API
         print("Configuring Gemini API", file=sys.stderr)
-        genai.configure(api_key="AIzaSyC7GK9bFtQ1tbAW6Ld97cqKJ48nblLDIgg")
+        genai.configure(api_key="")
         model = genai.GenerativeModel("gemini-1.5-flash")
         
         # Generate content with Gemini

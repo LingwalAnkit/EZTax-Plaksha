@@ -11,7 +11,7 @@ from langchain.memory import ConversationBufferMemory
 from dotenv import load_dotenv
 
 # ✅ Load environment variables from the specified .env file
-load_dotenv(r"C:\Users\AkshatSaraswat\Desktop\Plaksha\.env ")
+load_dotenv(r"D:\EZTax-Plaksha\PlakshaChatbot\.env")
 
 # ✅ Retrieve second Google Gemini API key from environment
 api_key = os.getenv("GEMINI_API_KEY_2")
@@ -24,7 +24,7 @@ os.environ["GOOGLE_API_KEY"] = api_key
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", temperature=0.7)
 
 # ✅ Load PDFs from folder
-pdf_folder = r"C:\Users\AkshatSaraswat\Desktop\Plaksha\PlakshaChatbot\tax_pdfs"
+pdf_folder = r"D:\\EZTax-Plaksha\\PlakshaChatbot\\tax_pdfs"
 
 if not os.path.exists(pdf_folder):
     raise FileNotFoundError(f"❌ Folder not found: {pdf_folder}")
