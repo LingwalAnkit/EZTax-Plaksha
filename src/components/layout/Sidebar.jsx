@@ -79,7 +79,7 @@ const SidebarComponent = () => {
     },
     {
       label: "AI Insurance",
-      href: "localhost:8000",
+      href: "https://localhost:8501",
       icon: <PiggyBank className="h-6 w-6 flex-shrink-0" />,
       isBottom: false,
     },
