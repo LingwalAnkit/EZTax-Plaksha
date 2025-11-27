@@ -106,7 +106,7 @@ def master_function():
 
         # Initialize the Gemini model
         genai.configure(api_key=API_KEY)
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.5-flash")
 
         # Generate structured JSON response using AI
         response = generate_response_with_retry(model, prompt, image_final)

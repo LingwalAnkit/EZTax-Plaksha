@@ -46,7 +46,7 @@ Always format responses with emojis and clear structure.
             messages.append({"role": "user", "content": user_message})
 
             response = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 messages=messages,
                 max_tokens=500,
                 temperature=0.7

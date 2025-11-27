@@ -32,7 +32,7 @@ def get_gemini_insights(user_data):
     Provide personalized tax-saving and investment insights, considering the Indian tax laws. Format the response with clear headings and bullet points for readability.
     """
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.5-flash")
         response = model.generate_content(prompt)
         return response.text if response else "No insights generated."
     except Exception as e:
